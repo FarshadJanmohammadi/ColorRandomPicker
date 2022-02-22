@@ -16,8 +16,12 @@ divTitle.classList.add("title");
 main.appendChild(divTitle);
 
 const h1DivTitle = document.createElement("h1");
-h1DivTitle.innerHTML = "Background Color";
+h1DivTitle.innerHTML = "Background Color	";
 divTitle.appendChild(h1DivTitle);
+
+const spanDivTitle = document.createElement("span");
+spanDivTitle.innerText = " #ebf7ff";
+h1DivTitle.appendChild(spanDivTitle);
 
 const div_buttonContainer = document.createElement("div");
 div_buttonContainer.classList.add("button-container");
@@ -26,6 +30,15 @@ main.appendChild(div_buttonContainer);
 const button_buttonContainer = document.createElement("button");
 button_buttonContainer.innerText = "Click Me";
 div_buttonContainer.appendChild(button_buttonContainer);
+
+const sectionFooter = document.createElement("footer");
+main.appendChild(sectionFooter);
+
+const aFooter = document.createElement("a");
+aFooter.setAttribute("href", "https://github.com");
+aFooter.setAttribute("target", "_blank");
+aFooter.innerHTML = `Made with <i class="fas fa-heart"> </i>   by Farshad Janmohammadi`;
+sectionFooter.appendChild(aFooter);
 
 const buttonHanler = () => {
   const randomColorsArray = [
@@ -56,8 +69,8 @@ const buttonHanler = () => {
   const randomColorToStringAll = randomColorToString.replace(/,/g, "");
 
   const backgroudColorBody = (body.style.backgroundColor = "#" + randomColorToStringAll);
-  console.log(backgroudColorBody);
-  h1DivTitle.innerHTML = "Background Color: " + backgroudColorBody;
+
+  spanDivTitle.innerText = backgroudColorBody;
 };
 
 button_buttonContainer.addEventListener("click", buttonHanler);

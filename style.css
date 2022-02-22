@@ -45,19 +45,39 @@ nav h1:hover {
 main {
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
-  row-gap: 40px;
+
   width: 100vw;
   height: 90vh;
 }
 
 main div.title {
-  padding: 10px 20px;
+  padding: 20px 40px;
   background-color: var(--clr-primary-2);
   color: var(--clr-primary-1);
   border-radius: 6px;
   box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.432);
+  position: relative;
+  top: 30%;
+}
+main div.title h1 {
+  margin-right: 200px;
+}
+
+main div.title h1 span {
+  position: absolute;
+  background-color: var(--clr-primary-5);
+  padding: 20px 36px;
+  border-top-right-radius: 6px;
+  border-bottom-right-radius: 6px;
+  right: 0;
+  top: 0;
+  width: 40%;
+  text-align: center;
+  cursor: var(--cursor-primary);
+}
+.button-container {
 }
 
 .button-container button {
@@ -75,4 +95,37 @@ main div.title {
 .button-container button:hover {
   color: var(--clr-primary-1);
   background-color: var(--clr-primary-5);
+}
+
+footer {
+  margin-bottom: 10px;
+}
+
+footer a {
+  text-decoration: none;
+  color: var(--clr-primary-5);
+  text-shadow: 0px 0px 2px rgba(0, 0, 0, 0.68);
+}
+footer a i {
+  color: red;
+  animation: animate 1s ease-in-out 0s infinite;
+}
+
+@keyframes animate {
+  0% {
+    transform: scale(1);
+    opacity: 0.5;
+  }
+  25% {
+    transform: scale(1.4);
+    opacity: 1;
+  }
+  75% {
+    transform: scale(1);
+    opacity: 0.5;
+  }
+  100% {
+    transform: scale(1.4);
+    opacity: 1;
+  }
 }
