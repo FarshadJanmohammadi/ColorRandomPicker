@@ -13,6 +13,7 @@
   margin: 0px;
   padding: 0px;
   box-sizing: border-box;
+  -webkit-tap-highlight-color: transparent;
 }
 
 body {
@@ -47,20 +48,17 @@ main {
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
-
   width: 100vw;
   height: 90vh;
 }
 
 main div.title {
   color: var(--clr-primary-1);
-
   position: relative;
   top: 30%;
   display: flex;
   justify-content: center;
   align-items: center;
-  column-gap: 20px;
   width: 100%;
   height: auto;
   padding: 10x 0px;
@@ -70,28 +68,19 @@ main div.title h1 {
   background-color: var(--clr-primary-2);
   padding: 20px 15px;
   border-radius: 6px;
-
-  /* margin-right: 200px; */
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
 }
 
 main div.title h1:nth-child(2) {
-  /* position: absolute; */
-  /* display: block; */
-  /* position: fixed; */
   background-color: var(--clr-primary-5);
   padding: 20px 15px;
   border-radius: 6px;
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
   background-color: var(--clr-primary-2);
-  /* font-size: 1.2em;
-  font-weight: 700; */
-
-  /* right: 0; */
-  /* top: 0; */
-  /* width: 200px; */
   text-align: center;
   cursor: var(--cursor-primary);
-}
-.button-container {
 }
 
 .button-container button {
@@ -109,6 +98,9 @@ main div.title h1:nth-child(2) {
 .button-container button:hover {
   color: var(--clr-primary-1);
   background-color: var(--clr-primary-5);
+}
+.button-container button:active {
+  transform: scale(0.9);
 }
 
 footer {
