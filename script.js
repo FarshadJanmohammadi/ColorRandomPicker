@@ -5,7 +5,7 @@ navbar.classList.add("navbar");
 body.appendChild(navbar);
 
 const h1Navbar = document.createElement("h1");
-h1Navbar.innerText = "Color Flipper";
+h1Navbar.innerText = "Color Random Picker";
 navbar.appendChild(h1Navbar);
 
 const main = document.createElement("main");
