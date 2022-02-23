@@ -19,9 +19,9 @@ const h1DivTitle = document.createElement("h1");
 h1DivTitle.innerHTML = "Background Color	";
 divTitle.appendChild(h1DivTitle);
 
-const spanDivTitle = document.createElement("span");
-spanDivTitle.innerText = " #ebf7ff";
-h1DivTitle.appendChild(spanDivTitle);
+const spanDivTitle = document.createElement("h1");
+spanDivTitle.innerText = "#ebf7ff";
+divTitle.appendChild(spanDivTitle);
 
 const div_buttonContainer = document.createElement("div");
 div_buttonContainer.classList.add("button-container");
@@ -35,7 +35,7 @@ const sectionFooter = document.createElement("footer");
 main.appendChild(sectionFooter);
 
 const aFooter = document.createElement("a");
-aFooter.setAttribute("href", "https://github.com");
+aFooter.setAttribute("href", "https://github.com/farshadjanmohammadi");
 aFooter.setAttribute("target", "_blank");
 aFooter.innerHTML = `Made with <i class="fas fa-heart"> </i>   by Farshad Janmohammadi`;
 sectionFooter.appendChild(aFooter);
