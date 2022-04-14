@@ -1,5 +1,5 @@
 
-# Color Ranom Picker
+# Color Random Picker
 Color random picker a project css tools using vanilla JavaScript
 
 
