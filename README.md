@@ -3,6 +3,16 @@
 Color random picker a project css tools using vanilla JavaScript
 
 
+## Screenshots
+
+![App Screenshot1](https://github.com/FarshadJanmohammadi/images/blob/main/colorpicker.jpg?raw=true)
+
+
+## Demo Online
+
+https://nifty-rosalind-3d35bc.netlify.app
+
+
 ## Authors
 
 - [@FarshadJanmohammadi](https://www.github.com/farshadjanmohammadi)
@@ -19,10 +29,7 @@ Color random picker a project css tools using vanilla JavaScript
 
 
 
-## Demo
 
-Insert gif or link to demo:
-https://nifty-rosalind-3d35bc.netlify.app
 
 
 ## 🚀 About Me
@@ -39,6 +46,7 @@ With the ability to carry out projects individually and in groups.
 
 ## 🛠 Skills
 
-HTML, CSS, JavaScript(ES6) ,JQuery, ReactJS, Redux, Typescript, Sass, Bootstrap, Git, GraphQL 
+HTML, CSS, JavaScript(ES6) ,JQuery, ReactJS, Redux, Next, MaterialUI, Typescript, Sass, Bootstrap, Git, TailWind
+
 
 
